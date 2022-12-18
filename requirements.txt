@@ -1,0 +1,7 @@
+react-cricular-progressbar
+socket.io-client
+react-webcam
+@emotion/css
+@mediapipe/camerautils
+@mediapipe/hands
+@mediapipe/drawing_utils
