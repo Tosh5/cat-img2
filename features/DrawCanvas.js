@@ -6,7 +6,7 @@ import { HAND_CONNECTIONS, NormalizedLandmarkListList, Results } from '@mediapip
  * @param ctx canvas context
  * @param results 手の検出結果
  */
-export const drawCanvas = (ctx, results) => {
+export const DrawCanvas = (ctx, results) => {
 	const width = ctx.canvas.width
 	const height = ctx.canvas.height
 

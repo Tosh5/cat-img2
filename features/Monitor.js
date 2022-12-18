@@ -3,7 +3,8 @@ import Webcam from 'react-webcam';
 import { css } from '@emotion/css';
 import { Camera } from '@mediapipe/camera_utils';
 import { Hands, Results } from '@mediapipe/hands';
-import { drawCanvas } from './drawCanvas';
+// import { drawCanvas } from './drawCanvas';
+import { DrawCanvas } from './DrawCanvas';
 
 // ↓以下のおまじないは使われてないが、これがないと、
 // ↓await hands.send({ image: webcamRef.current.video })
@@ -56,7 +57,7 @@ const Monitor = (props) => {
 	const onResults = useCallback((results) => {
 		resultsRef.current = results
 		const canvasCtx = canvasRef.current.getContext('2d')
-		drawCanvas(canvasCtx, results)
+		DrawCanvas(canvasCtx, results)
 		// OutputData();
 		Location();
 	}, [])
