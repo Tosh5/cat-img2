@@ -17,6 +17,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 // websocket通信を開始。下記はAWSのURL。ポート番号の解放を忘れない。
 const socket = io.connect("https://43.207.73.189:8000")
+// コメントアウトで遊ぼう
 
 export default function Home() {
   // index(自分の動きの激しさ)を定義。初期値0
