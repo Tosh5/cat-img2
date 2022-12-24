@@ -18,3 +18,7 @@ socket.io
 node-record-lpcm16
 sleep
 # all install via npm
+
+
+# for express with typescript
+@types/express

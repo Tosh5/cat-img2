@@ -2,8 +2,16 @@ const {Worker} = require('worker_threads');
 const worker = new Worker('./src/worker.js');
 
 
-const express = require('express')
-const app = express()
+
+// const express = require('express')
+// const app = express()
+
+import express from 'express'
+const app: express.Express = express()
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+
 const http = require('http')
 const {Server} = require('socket.io')
 const cors = require('cors')
@@ -16,6 +24,11 @@ const io = new Server(server, {
         origin: 'http://localhost:3000',
         methods: ['GET', 'POST']
     }
+})
+
+// import express from 'express'
+app.get('/apple', (req: express.Request, res: express.Response) => {
+  res.send('hello world')
 })
 
 io.on("connection", (socket: any) =>{
