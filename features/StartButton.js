@@ -1,5 +1,5 @@
 import io from "socket.io-client";
-const socket = io.connect("http://43.207.73.189:8000")
+const socket = io.connect("https://43.207.73.189:8000")
 
 const StartButton = (props) => {
 
