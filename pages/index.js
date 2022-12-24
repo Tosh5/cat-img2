@@ -46,7 +46,7 @@ export default function Home() {
       <div className="App">
       <div className="team-index">
         <h1 className='title'>チーム全体の応援</h1>
-        {/* <p>build 2022/12/24 1718</p> */}
+        <p>build 2022/12/24 1808</p>
         <button 
           className='button' 
           // onClick={sendMyIndex}
