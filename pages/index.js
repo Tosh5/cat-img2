@@ -15,8 +15,9 @@ import dynamic from 'next/dynamic';
 
 const inter = Inter({ subsets: ['latin'] })
 
+const socket = io.connect("https://cheer-app-server1.onrender.com")
 // websocket通信を開始。下記はAWSのURL。ポート番号の解放を忘れない。
-const socket = io.connect("https://main.d1jvwca6scasxw.amplifyapp.com:8000")
+// const socket = io.connect("https://main.d1jvwca6scasxw.amplifyapp.com:8000")
 // const socket = io.connect("https://43.207.73.189:8000")
 
 export default function Home() {

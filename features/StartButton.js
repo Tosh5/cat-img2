@@ -1,5 +1,6 @@
 import io from "socket.io-client";
-const socket = io.connect("https://main.d1jvwca6scasxw.amplifyapp.com:8000")
+const socket = io.connect("https://cheer-app-server1.onrender.com")
+// const socket = io.connect("https://main.d1jvwca6scasxw.amplifyapp.com:8000")
 
 const StartButton = (props) => {
 
